@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#main .all {
+    display: flex;
+    height: 100vh;
+    display: none;
+}
+
+#main .left {
+    position: relative;
+    display: flex;
+    gap: 0;
+    margin: auto;
+}
+
+
+#main .gameField {
+    width: fit-content;
+    height: 90vh;
+    padding: 1rem;
+    background-color: rgb(255, 234, 218);
+    box-shadow: inset 0 0 1rem rgb(255, 218, 218), 0 0 0.5rem rgb(255, 218, 218);
+    display: grid;
+    grid-template-columns: repeat(5, 5rem);
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-right: 0;
+}
+
+.questionField {
+    height: 90vh;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: rgb(188, 172, 151);
+}
+
+.questionField p {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.questionField h2 {
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.questionField h3 {
+    color: white;
+    font-family: sans-serif;
+}
+
+#main .gameField img {
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 0.25rem;
+}
+
+#main .item {
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#main .item img {
+    transition: 0.5s;
+}
+
+#main .item img:hover {
+    transform: scale(1.1);
+}
+
+#main .start {
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: lightcoral;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    transform: translate(-50%, -40%);
+    margin: auto;
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+#main .start h2 {
+    color: lightcoral;
+    text-shadow: 5px 5px 0 rgb(255, 181, 181), 10px 10px 0 rgb(255, 203, 203), 15px 15px 0 rgb(255, 228, 228);
+    font-size: 6rem;
+    padding-bottom: 3rem;
+}
+
+#main .startbtn {
+    padding: 1rem 1.5rem;
+    border: 0.25rem solid lightcoral;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    color: lightcoral;
+    background-color: rgba(255, 255, 255, 0.374);
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#main .startbtn:hover {
+    background-color: rgb(235, 145, 145);
+    border: 0.25rem solid rgb(238, 150, 150);
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+#main .restart {
+    padding: 0.75rem 1.25rem;
+    border: 0.25rem solid lightcoral;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    color: lightcoral;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+    height: fit-content;
+    position: absolute;
+    margin: 1rem;
+}
+
+#main .restart:hover {
+    background-color: rgb(235, 145, 145);
+    border: 0.25rem solid rgb(238, 150, 150);
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.question {
+    display: none;
+}
